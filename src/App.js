@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { useAuth0 } from "@auth0/auth0-react";
+import { Home } from './components/Home/Home.js';
+import LoginButton from './components/logout/LoginButton.js'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+  
+  const {loginWithRedirect, isAuthenticated,user} = useAuth0();
+  function authCheck(){
+   if(isAuthenticated){
+    console.log("yes",user,isAuthenticated)
+    return <Home/>;
+   }
+   else{
+    console.log("NO");
+    return <LoginButton/>
+    
+    
+   }
+
+  }
+
+  return (<div>
+    {authCheck()}
+    
+   
+   </div>
   );
 }
 
