@@ -46,7 +46,7 @@ export const Product = (props) => {
 
   return (
     
-    <div className="card-grid-item" key={id}> 
+    <div className="grid-item" key={id}> 
     {/* start */}
 
     <div className="card" >

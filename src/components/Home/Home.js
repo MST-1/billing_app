@@ -9,7 +9,7 @@ export const Home = () => {
   const count=useSelector(state=>state.counter.value);
   // console.warn("count",count);
   
-      return <div className="Card-item">
+      return <div className="grid-container">
          
          
   
