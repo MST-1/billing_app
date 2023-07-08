@@ -1,0 +1,37 @@
+.Card-item{
+  background-color: aquamarine;
+  width:100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.card-grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-img-top{
+
+width: 300px;
+height: 300px;
+border-radius: 20%;
+
+}
+
+.card-body{
+
+  width: 300px;
+  height: fit-content;
+  background-color: aquamarine;
+
+}
+

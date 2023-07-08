@@ -1,7 +1,28 @@
-import React from 'react'
-import { Navbar } from '../Nav/Navbar.js'
+
+import React from "react";
+import { Product } from './Product.jsx';
+import './home.css'
+import { useSelector } from "react-redux";
+
+
 export const Home = () => {
-  return (
-    <div><Navbar/></div>
-  )
+  const count=useSelector(state=>state.counter.value);
+  // console.warn("count",count);
+  
+      return <div className="Card-item">
+         
+         
+  
+         <div >{count.map((prod)=>{
+          // console.log(prod);
+       return (
+            <Product data={prod}/>
+        )
+      })}</div>
+
+
+
+         </div>
+
+      
 }

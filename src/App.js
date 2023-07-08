@@ -1,8 +1,9 @@
 
 import './App.css';
 import { useAuth0 } from "@auth0/auth0-react";
-import { Home } from './components/Home/Home.js';
+// import { Home } from './components/Home/Home.js';
 import LoginButton from './components/logout/LoginButton.js'
+import Rout from './Routes/route';
 
 function App() {
 
@@ -11,12 +12,11 @@ function App() {
   function authCheck(){
    if(isAuthenticated){
     console.log("yes",user,isAuthenticated)
-    return <Home/>;
+    return <Rout/>;
    }
    else{
     console.log("NO");
     return <LoginButton/>
-    
     
    }
 
