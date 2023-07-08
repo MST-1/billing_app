@@ -138,12 +138,12 @@ export const Invoice = () => {
             <div class="i_col w_50">
               <p>Sub Total</p>
               <p>Due Total</p>
-              <p>Tax 10%</p>
+              <p>Tax 18%</p>
             </div>
             <div class="i_col w_50 text_right">
               <p>$ {sum()}</p>
               <p>$150.00</p>
-              <p>${sum()*0.1}</p>
+              <p>${sum()*0.18}</p>
             </div>
           </div>
           <div class="i_row grand_total_wrap">
@@ -151,7 +151,7 @@ export const Invoice = () => {
               <p>GRAND TOTAL:</p>
             </div>
             <div class="i_col w_50 text_right">
-              <p>${sum()+(sum()*0.1)-150}</p>
+              <p>${sum()+(sum()*0.18)-150}</p>
             </div>
           </div>
         </div>

@@ -15,12 +15,34 @@ flex-wrap: wrap;
 }
 .log_data{
 
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: fit-content;
     flex-wrap: wrap;
+    color: aliceblue;
+}
+.log_data img{
+
+width:50%
+
+}
+.log_data button{
+
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    font-family:fantasy ;
+    color: #fffefe;
+    background-color: black;
+    box-shadow: none;
+    border-color: black;
+}
+.bt:hover{
+color: #068FFF;
+border-radius: 50%;
+transition: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }

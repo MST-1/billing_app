@@ -10,17 +10,19 @@
   
 
   .pro{
-  background: rgb(79, 221, 231);
+  /* background: rgb(79, 221, 231); */
   width: 600px;
   padding: 10px;
   flex: 50%;
   margin: 10px;
   height: 300px;
+  border: 1px solid black;
+  border-radius: 1%;
     
   }
 
   .cartCard{
-   background: rgba(79, 221, 231, 0.941);
+   /* background: rgba(79, 221, 231, 0.941); */
    width:300px;
    padding: 10px;
    position: relative;
@@ -53,15 +55,16 @@
   .total{
     width: 400px;
     height: 350px;
-    background: rgb(35, 159, 201);
+    background: rgb(146, 190, 188);
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     position: fixed;
-    
+    border: 1px solid black;
+    box-shadow: 8px 8px  #e9e0e0;
    
-    right: 10px;
-    top:90px;
+    right: 150px;
+    top:200px;
 
   }
   .ttl{
@@ -70,20 +73,20 @@
     padding: 10px;
     font-size: 30px;
     flex: 10%;
-    background: rgb(79, 221, 231)
+    /* background: rgb(79, 221, 231) */
 
   }
   .disc{
     padding: 10px;
     flex: 80%;
-    background: rgb(79, 221, 231);
+    /* background: rgb(79, 221, 231); */
 
   }
 
   .cartTotal{
     padding: 10px;
     flex: 80%;
-    background: rgb(79, 221, 231);
+    /* background: rgb(79, 221, 231); */
   }
   .add,.display,.sub{
   /* width: 20px;
@@ -100,25 +103,34 @@
     border-radius:100%;
   
   }
-  /* .invoice{
-    background-color: aquamarine;
-    padding: 5px;
-    
-  } */
   .c-body{
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     flex-wrap: wrap;
   }
   .checkout{
     position: absolute;
-    left: 50px;
+    left: 100px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    
   }
-  .invoice{
-    /* position: absolute; */
-    right: 50px;
+  .checkout:hover{
+    background-color: rgba(173, 194, 194, 0.6);
+  }
+
+  .inv:hover{
+    background-color: rgba(191, 211, 211, 0.6);
+  }
+  .inv{
+    position: absolute;
+    right: 80px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid black;
   }
 .image{
   

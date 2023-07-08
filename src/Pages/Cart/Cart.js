@@ -123,8 +123,8 @@ const total = data.reduce((acc, item) => acc + item.price*item.qty, 0);
         <p >Total Cart Value: ${total}</p></div>
         
         <div className="c-body">
-          {/* <div className="checkout"><Link to="/Checkout">Checkout</Link></div> */}
-        <div className="invoice"><Link to="/Invoice">View Invoice</Link></div></div>
+          <div className="checkout"><Link to="/Checkout" style={{textDecoration:"none"}}>Checkout</Link></div>
+        <div className="inv"><Link to="/Invoice" style={{textDecoration:"none"}}>View Invoice</Link></div></div>
       
 </div>
       

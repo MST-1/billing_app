@@ -13,12 +13,12 @@ export const Home = () => {
          
          
   
-         <div >{count.map((prod)=>{
+         {count.map((prod)=>{
           // console.log(prod);
        return (
-            <Product data={prod}/>
+            <Product  data={prod}/>
         )
-      })}</div>
+      })}
 
 
 

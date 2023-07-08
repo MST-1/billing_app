@@ -13,10 +13,13 @@
 
     width: fit-content;
     position: absolute;
-    right: 150px;
+    right: 200px;
     padding: 10px;
     /* background-color: aquamarine; */
-    background:linear-gradient(to right, #00093c , #2d0b00); ;
+    /* color: aliceblue ; */
+    /* background:linear-gradient(to right, #00093c , #2d0b00); ; */
+    /* box-shadow: 5px 10px #fefefe; */
+    
     
     
 }
@@ -25,14 +28,21 @@
     width: fit-content;
     position: absolute;
     padding: 10px;
-    right: 50px; 
+    right: 80px; 
     background:linear-gradient(to right, #00093c , #2d0b00); ;
     /* background-color: aquamarine; */
 }
 .logo img{
-    width: 50px;
+    width: 80px;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: 50px;
     border-radius: 50%;
+    /* margin-top: 30px; */
     /* background-color: aquamarine; */
+}
+.Cart link{
+    color: aliceblue;
+}
+.logout :hover {
+    background-color: red;
 }
